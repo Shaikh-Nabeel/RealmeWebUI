@@ -19,12 +19,22 @@
                   background-color:whitesmoke;
                 }
             }
-            
-            
 
+            .footer-table{
+              padding-left:10px;
+            }
             @media only screen and (min-width: 746px){
               #footer-one,#footer-two,#footer-three{
                 display: none;
+              }
+              .footer-table{
+                float:left;
+                width:20%;
+                padding-left:60px;
+              }
+              #footer-block{
+                padding-top:20px;
+                height:300px;
               }
             }
             
@@ -40,9 +50,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
     
-    <body style="background-color: white;">
+    <body>
         
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" >
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top" style="min-height: 30px;">
                 <div class="container-fluid">
                   <a class="navbar-brand" href="#" style="color:yellow;">REALME</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -225,9 +235,8 @@
               <br><br><br>
               
               
-              <footer class="py-5" style="padding:20px;background-color:whitesmoke;">
-                <div class="row">
-                  <div class="col-2">
+              <footer id="footer-block" style="background-color:whitesmoke;">
+                  <div class="footer-table">
                     <h5>Recommendation</h5>
                     <ul class="nav flex-column">
                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Realme 5</a></li>
@@ -239,7 +248,7 @@
                   </div>
                   <span id="footer-one"></span>
 
-                  <div class="col-2">
+                  <div class="footer-table">
                     <h5>Support</h5>
                     <ul class="nav flex-column">
                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Service Center</a></li>
@@ -251,7 +260,7 @@
                   </div>
                   <span id="footer-two"></span>
 
-                  <div class="col-2">
+                  <div class="footer-table">
                     <h5>About Realme</h5>
                     <ul class="nav flex-column">
                       <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our brand</a></li>
@@ -263,7 +272,7 @@
                   </div>
                   <span id="footer-three"></span>
                   
-                  <div class="col-4">
+                  <div class="footer-table">
                     <form>
                       <h5>Subscribe to our Realme</h5>
                       <p>Monthly digest of whats new and exciting from us.</p>
@@ -275,11 +284,10 @@
                       </div>
                     </form>
                   </div>
-                </div>
-            
-                <div class="border-top" style="padding:10px;text-align:center;">
-                  <p>© 2021 Company, Inc. All rights reserved.</p>
-                </div>
+                  <div class="border-top" style="width:100%;padding-top:10px;text-align:center;float:left;clear:both;background-color:whitesmoke;">
+                    <p>© 2021 Company, Inc. All rights reserved.</p>
+                  </div>
               </footer>
+
     </body>
 </html>

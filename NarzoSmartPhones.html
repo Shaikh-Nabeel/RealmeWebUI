@@ -19,6 +19,14 @@
                 #narzoLogo{
                     display: inline;
                 }
+                #narzoDetails{
+                    background-image: url('img/realme-narzo-bg-pic.webp');
+                    background-repeat:no-repeat;
+                }
+            }
+            #memory-icon{
+                object-fit: cover;
+                object-position:top;
             }
         </style>
         
@@ -52,7 +60,7 @@
         <div style="background-color:black;color:white;">
             <h4 style="text-align:center;"><span style="color:yellow">Realme </span> <span style="color:rgb(27, 228, 228);">Narzo 30 5G </span></h4><br>
         </div>
-        <div style="height:500px;background-image: url('img/realme-narzo-bg-pic.webp');">
+        <div id="narzoDetails" style="height:500px;background-color:black;">
             <div style="float:right;padding-right:25px;padding-top:25px;">
                 <img src="img/camera-1564671-1325543.png" alt="..." style="height:100px;width:100px;"/>
                 <p style="color:white;padding-top:5px;">48MP, 8MP Ultra Wide<br>with Macro Lens</p>
@@ -64,6 +72,10 @@
             <div style="float:right;clear:right;padding-right:35px;padding-top:25px;">
                 <img src="img/battery-icon-j.jpg" alt="..." style="height:100px;width:100px;"/>
                 <p style="color:white;padding-top:5px;">Battery Life 5000 mAh</p>
+            </div>
+            <div style="float:right;padding-right:25px;padding-top:25px;">
+                <img id="memory-icon" src="img/memory-card-icon2.webp" alt="..." style="height:100px;width:100px;"/>
+                <p style="color:white;padding-top:5px;">4GB-64GB<br>6GB-128GB</p>
             </div>
         </div>
         <div style="background-color:black;height:15px;">
